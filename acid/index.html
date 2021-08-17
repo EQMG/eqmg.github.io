@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<title>Acid &#8211; Equilibrium Games</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Equilibrium Games &raquo; Feed" href="/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/mysite\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-css" href="/wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/all.min.css?ver=2.10.3" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shims-css" href="/wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/v4-shims.min.css?ver=2.10.3" type="text/css" media="all">
+<link rel="stylesheet" id="themeisle-block_styles-css" href="/wp-content/plugins/themeisle-companion/vendor/codeinwp/gutenberg-blocks/build/style.css?ver=1.5.11" type="text/css" media="all">
+<link rel="stylesheet" id="ctf_styles-css" href="/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=1.7" type="text/css" media="all">
+<link rel="stylesheet" id="hestia-clients-bar-css" href="/wp-content/plugins/themeisle-companion/obfx_modules/companion-legacy/assets/css/hestia/clients-bar.css?ver=5.8" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="/wp-content/themes/hestia/assets/bootstrap/css/bootstrap.min.css?ver=1.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="hestia-font-sizes-css" href="/wp-content/themes/hestia/assets/css/font-sizes.min.css?ver=3.0.8" type="text/css" media="all">
+<link rel="stylesheet" id="hestia_style-css" href="/wp-content/themes/hestia/style.min.css?ver=3.0.8" type="text/css" media="all">
+<style id="hestia_style-inline-css" type="text/css">div.wpforms-container-full .wpforms-form div.wpforms-field input.wpforms-error {
+				border: none;
+			}
+			div.wpforms-container .wpforms-form input[type=date],
+			div.wpforms-container .wpforms-form input[type=datetime],
+			div.wpforms-container .wpforms-form input[type=datetime-local],
+			div.wpforms-container .wpforms-form input[type=email],
+			div.wpforms-container .wpforms-form input[type=month],
+			div.wpforms-container .wpforms-form input[type=number],
+			div.wpforms-container .wpforms-form input[type=password],
+			div.wpforms-container .wpforms-form input[type=range],
+			div.wpforms-container .wpforms-form input[type=search],
+			div.wpforms-container .wpforms-form input[type=tel],
+			div.wpforms-container .wpforms-form input[type=text],
+			div.wpforms-container .wpforms-form input[type=time],
+			div.wpforms-container .wpforms-form input[type=url],
+			div.wpforms-container .wpforms-form input[type=week],
+			div.wpforms-container .wpforms-form select,
+			div.wpforms-container .wpforms-form textarea, .nf-form-cont input:not([type=button]),
+			div.wpforms-container .wpforms-form .form-group.is-focused .form-control {
+			  box-shadow: none;
+			}
+			
+			div.wpforms-container .wpforms-form input[type=date],
+			div.wpforms-container .wpforms-form input[type=datetime],
+			div.wpforms-container .wpforms-form input[type=datetime-local],
+			div.wpforms-container .wpforms-form input[type=email],
+			div.wpforms-container .wpforms-form input[type=month],
+			div.wpforms-container .wpforms-form input[type=number],
+			div.wpforms-container .wpforms-form input[type=password],
+			div.wpforms-container .wpforms-form input[type=range],
+			div.wpforms-container .wpforms-form input[type=search],
+			div.wpforms-container .wpforms-form input[type=tel],
+			div.wpforms-container .wpforms-form input[type=text],
+			div.wpforms-container .wpforms-form input[type=time],
+			div.wpforms-container .wpforms-form input[type=url],
+			div.wpforms-container .wpforms-form input[type=week],
+			div.wpforms-container .wpforms-form select,
+			div.wpforms-container .wpforms-form textarea, .nf-form-cont input:not([type=button]){
+				background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#d2d2d2, #d2d2d2);
+				float: none;
+				border: 0;
+				border-radius: 0;
+				background-color: transparent;
+				background-repeat: no-repeat;
+				background-position: center bottom, center calc(100% - 1px);
+				background-size: 0 2px, 100% 1px;
+				font-weight: 400;
+				transition: background 0s ease-out;
+			}
+			
+			div.wpforms-container .wpforms-form .form-group.is-focused .form-control{
+				outline: none;
+				background-size: 100% 2px,100% 1px;
+				transition-duration: 0.3s;
+			}
+			
+			/* Compatibility with WPForms */
+			div.wpforms-container .wpforms-form input[type=date].form-control,
+			div.wpforms-container .wpforms-form input[type=datetime].form-control,
+			div.wpforms-container .wpforms-form input[type=datetime-local].form-control,
+			div.wpforms-container .wpforms-form input[type=email].form-control,
+			div.wpforms-container .wpforms-form input[type=month].form-control,
+			div.wpforms-container .wpforms-form input[type=number].form-control,
+			div.wpforms-container .wpforms-form input[type=password].form-control,
+			div.wpforms-container .wpforms-form input[type=range].form-control,
+			div.wpforms-container .wpforms-form input[type=search].form-control,
+			div.wpforms-container .wpforms-form input[type=tel].form-control,
+			div.wpforms-container .wpforms-form input[type=text].form-control,
+			div.wpforms-container .wpforms-form input[type=time].form-control,
+			div.wpforms-container .wpforms-form input[type=url].form-control,
+			div.wpforms-container .wpforms-form input[type=week].form-control,
+			div.wpforms-container .wpforms-form select.form-control,
+			div.wpforms-container .wpforms-form textarea.form-control {
+			  border: none;
+			  padding: 7px 0;
+			  font-size: 14px;
+			}
+			div.wpforms-container .wpforms-form .wpforms-field-select select {
+			  border-radius: 3px;
+			}
+			div.wpforms-container .wpforms-form .wpforms-field-number input[type=number] {
+			  background-image: none;
+			  border-radius: 3px;
+			}
+			div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+			div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover {
+			  color: #ffffff;
+			  border: none;
+			}
+			
+			.home div.wpforms-container-full .wpforms-form {
+			  margin-left: 15px;
+			  margin-right: 15px;
+			}
+			
+			div.wpforms-container-full .wpforms-form .wpforms-field {
+			  padding: 0 0 24px 0 !important;
+			}
+			div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+			  text-align: right;
+			}
+			div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
+			  text-transform: uppercase;
+			}
+			div.wpforms-container-full .wpforms-form textarea {
+			  border: none !important;
+			}
+			div.wpforms-container-full .wpforms-form textarea:focus {
+			  border-width: 0 0 0 0 !important;
+			}
+			
+			.home div.wpforms-container .wpforms-form textarea {
+			  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#d2d2d2, #d2d2d2);
+			  background-color: transparent;
+			  background-repeat: no-repeat;
+			  background-position: center bottom, center calc(100% - 1px);
+			  background-size: 0 2px, 100% 1px;
+			}
+			
+			/* WPForms media queries for front page and mobile*/
+			@media only screen and (max-width: 768px) {
+			  .wpforms-container-full .wpforms-form .wpforms-one-half, .wpforms-container-full .wpforms-form button {
+			    width: 100% !important;
+			    margin-left: 0 !important;
+			  }
+			  .wpforms-container-full .wpforms-form .wpforms-submit-container {
+			    text-align: center;
+			  }
+			}
+			
+			div.wpforms-container .wpforms-form input:focus,
+			div.wpforms-container .wpforms-form select:focus {
+			  border: none;
+			}
+		
+.hestia-top-bar, .hestia-top-bar .widget.widget_shopping_cart .cart_list {
+			background-color: #363537
+		}
+		.hestia-top-bar .widget .label-floating input[type=search]:-webkit-autofill {
+			-webkit-box-shadow: inset 0 0 0px 9999px #363537
+		}.hestia-top-bar, .hestia-top-bar .widget .label-floating input[type=search], .hestia-top-bar .widget.widget_search form.form-group:before, .hestia-top-bar .widget.widget_product_search form.form-group:before, .hestia-top-bar .widget.widget_shopping_cart:before {
+			color: #ffffff
+		} 
+		.hestia-top-bar .widget .label-floating input[type=search]{
+			-webkit-text-fill-color:#ffffff !important 
+		}
+		.hestia-top-bar div.widget.widget_shopping_cart:before, .hestia-top-bar .widget.widget_product_search form.form-group:before, .hestia-top-bar .widget.widget_search form.form-group:before{
+			background-color: #ffffff
+		}.hestia-top-bar a, .hestia-top-bar .top-bar-nav li a {
+			color: #ffffff
+		}
+		.hestia-top-bar ul li a[href*="mailto:"]:before, .hestia-top-bar ul li a[href*="tel:"]:before{
+			background-color: #ffffff
+		}
+		.hestia-top-bar a:hover, .hestia-top-bar .top-bar-nav li a:hover {
+			color: #eeeeee
+		}
+		.hestia-top-bar ul li:hover a[href*="mailto:"]:before, .hestia-top-bar ul li:hover a[href*="tel:"]:before{
+			background-color: #eeeeee
+		}
+		
+	
+		a, 
+		.navbar .dropdown-menu li:hover > a,
+		.navbar .dropdown-menu li:focus > a,
+		.navbar .dropdown-menu li:active > a,
+		.navbar .navbar-nav > li .dropdown-menu li:hover > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:hover,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:focus,
+		a:hover, 
+		.card-blog a.moretag:hover, 
+		.card-blog a.more-link:hover, 
+		.widget a:hover,
+		.has-text-color.has-accent-color,
+		p.has-text-color a {
+		    color:#b8312f;
+		}
+		
+		.svg-text-color{
+			fill:#b8312f;
+		}
+		
+		.pagination span.current, .pagination span.current:focus, .pagination span.current:hover {
+			border-color:#b8312f
+		}
+		
+		button,
+		button:hover,
+		.woocommerce .track_order button[type="submit"],
+		.woocommerce .track_order button[type="submit"]:hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="button"],
+		input[type="button"]:hover,
+		input[type="submit"],
+		input[type="submit"]:hover,
+		input#searchsubmit, 
+		.pagination span.current, 
+		.pagination span.current:focus, 
+		.pagination span.current:hover,
+		.btn.btn-primary,
+		.btn.btn-primary:link,
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary.active:focus, 
+		.btn.btn-primary.active:hover,
+		.btn.btn-primary:active:hover, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover,
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.hestia-sidebar-open.btn.btn-rose:focus,
+		.hestia-sidebar-close.btn.btn-rose:focus,
+		.label.label-primary,
+		.hestia-work .portfolio-item:nth-child(6n+1) .label,
+		.nav-cart .nav-cart-content .widget .buttons .button,
+		.has-accent-background-color[class*="has-background"] {
+		    background-color: #b8312f;
+		}
+		
+		@media (max-width: 768px) { 
+	
+			.navbar-default .navbar-nav>li>a:hover,
+			.navbar-default .navbar-nav>li>a:focus,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:hover,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:focus,
+			.navbar button.navbar-toggle:hover,
+			.navbar .navbar-nav li:hover > a i {
+			    color: #b8312f;
+			}
+		}
+		
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close),
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button),
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		input[type="submit"], 
+		input[type="button"], 
+		.btn.btn-primary,
+		.widget_product_search button[type="submit"],
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    -webkit-box-shadow: 0 2px 2px 0 rgba(184,49,47,0.14),0 3px 1px -2px rgba(184,49,47,0.2),0 1px 5px 0 rgba(184,49,47,0.12);
+		    box-shadow: 0 2px 2px 0 rgba(184,49,47,0.14),0 3px 1px -2px rgba(184,49,47,0.2),0 1px 5px 0 rgba(184,49,47,0.12);
+		}
+		
+		.card .header-primary, .card .content-primary,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    background: #b8312f;
+		}
+		
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button):hover,
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close):hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="submit"]:hover,
+		input[type="button"]:hover,
+		input#searchsubmit:hover, 
+		.widget_product_search button[type="submit"]:hover,
+		.pagination span.current, 
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover, 
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.pagination span.current:hover,
+		.everest-forms button[type=submit].everest-forms-submit-button:hover,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:focus,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:active {
+			-webkit-box-shadow: 0 14px 26px -12px rgba(184,49,47,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(184,49,47,0.2);
+		    box-shadow: 0 14px 26px -12px rgba(184,49,47,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(184,49,47,0.2);
+			color: #fff;
+		}
+		
+		.form-group.is-focused .form-control {
+			background-image: -webkit-gradient(linear,left top, left bottom,from(#b8312f),to(#b8312f)),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: -webkit-linear-gradient(linear,left top, left bottom,from(#b8312f),to(#b8312f)),-webkit-linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: linear-gradient(linear,left top, left bottom,from(#b8312f),to(#b8312f)),linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+		}
+		
+		.navbar:not(.navbar-transparent) li:not(.btn):hover > a,
+		.navbar li.on-section:not(.btn) > a, 
+		.navbar.full-screen-menu.navbar-transparent li:not(.btn):hover > a,
+		.navbar.full-screen-menu .navbar-toggle:hover,
+		.navbar:not(.navbar-transparent) .nav-cart:hover, 
+		.navbar:not(.navbar-transparent) .hestia-toggle-search:hover {
+				color:#b8312f
+		}
+		
+			.header-filter-gradient { 
+				background: linear-gradient(45deg, rgba(168,29,132,1) 0%, rgb(234,57,111) 100%); 
+			}
+			.has-text-color.has-header-gradient-color { color: #a81d84; }
+			.has-header-gradient-background-color[class*="has-background"] { background-color: #a81d84; }
+			
+		.has-text-color.has-background-color-color { color: #E5E5E5; }
+		.has-background-color-background-color[class*="has-background"] { background-color: #E5E5E5; }
+		
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){ padding-top:15px;  padding-bottom:15px;  padding-left:33px;  padding-right:33px; }
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, input[type="submit"].search-submit, .hestia-view-cart-wrapper .added_to_cart.wc-forward, .woocommerce-product-search button, .woocommerce-cart .actions .button, #secondary div[id^=woocommerce_price_filter] .button, .woocommerce div[id^=woocommerce_widget_cart].widget .buttons .button, .searchform input[type=submit], .searchform button, .search-form:not(.media-toolbar-primary) input[type=submit], .search-form:not(.media-toolbar-primary) button, .woocommerce-product-search input[type=submit], .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){border-radius:3px;}
+@media (min-width: 769px){
+			.page-header.header-small .hestia-title,
+			.page-header.header-small .title,
+			h1.hestia-title.title-in-content,
+			.main article.section .has-title-font-size {
+				font-size: 42px;
+			}}
+
+		.page-template-builder-fullwidth-std .header > .elementor {
+			padding-top: 70px;
+		}</style>
+<link rel="stylesheet" id="hestia_fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=3.0.8" type="text/css" media="all">
+<link rel="stylesheet" id="themeisle-gutenberg-post-84-1612737098.css-css" href="/wp-content/uploads/themeisle-gutenberg/post-84-1612737098.css?ver=1.5.11" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/84">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8">
+<link rel="canonical" href="/acid/">
+<link rel="shortlink" href="/?p=84">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fmysite%2Facid%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fmysite%2Facid%2F&#038;format=xml">
+<!-- Enter your scripts here --><link rel="icon" href="/wp-content/uploads/2018/09/cropped-Equilibrium_08-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2018/09/cropped-Equilibrium_08-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2018/09/cropped-Equilibrium_08-180x180.png">
+<meta name="msapplication-TileImage" content="http://localhost/mysite/wp-content/uploads/2018/09/cropped-Equilibrium_08-270x270.png">
+		<style type="text/css" id="wp-custom-css">.copyright.pull-right {
+    display: none;
+}</style>
+		</head>
+
+<body class="page-template-default page page-id-84 blog-post header-layout-default">
+		<div class="wrapper  default ">
+		<header class="header ">
+			<div style="display: none"></div>		<nav class="navbar navbar-default navbar-fixed-top  hestia_left navbar-not-transparent">
+						<div class="container">
+						<div class="navbar-header">
+			<div class="title-logo-wrapper">
+				<a class="navbar-brand" href="/" title="Equilibrium Games">
+					<p>Equilibrium Games</p></a>
+			</div>
+								<div class="navbar-toggle-wrapper">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="sr-only">Toggle Navigation</span>
+			</button>
+					</div>
+				</div>
+		<div id="main-navigation" class="collapse navbar-collapse"><ul id="menu-top-menu" class="nav navbar-nav">
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a title="Devblog" href="/devblog/">Devblog</a></li>
+<li id="menu-item-209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-209"><a title="Acid" href="https://EQMG.github.io/Acid/">Acid</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39 dropdown">
+<a title="Games" href="#" class="dropdown-toggle">Games <span class="caret-wrap"><span class="caret"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></span></a>
+<ul role="menu" class="dropdown-menu">
+	<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a title="Polyorbis" href="/ldjam-38-polyorbis/">Polyorbis</a></li>
+</ul>
+</li>
+</ul></div>			</div>
+					</nav>
+				</header>
+<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active">
+<div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title ">Acid</h1></div></div></div>
+<div class="header-filter header-filter-gradient"></div>
+</div>
+<div class="main  main-raised ">
+		<div class="blog-post ">
+		<div class="container">
+			
+
+	<article id="post-84" class="section section-text">
+		<div class="row">
+						<div class="col-md-8 page-content-wrap  col-md-offset-2">
+				
+<figure><img loading="lazy" width="299" height="130" src="https://raw.githubusercontent.com/Equilibrium-Games/Acid/master/Documents/Acid_03.png" class="alignnone"></figure><br> <br><a href="https://www.paypal.me/mattparks5855"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://ci.appveyor.com/project/Mattparks/acid"><img src="https://ci.appveyor.com/api/projects/status/e1an80wt6rb5nfk3?svg=true" alt="Build status"></a> <a href="https://travis-ci.org/Equilibrium-Games/Acid"><img src="https://travis-ci.org/Equilibrium-Games/Acid.svg?branch=master" alt="Build Status"></a><br><br>
+
+
+
+Acid is an open-source, cross-platform game engine written in modern C++17 with a focus on modularity and simplicity. Features are broken down into modules, modules can be loaded or unloaded from Acid with ease. Acid uses an Entity Component System that breaks entity features between serializable Components. Vulkan is used as the only rendering API, as a result, Vulkan functions can be used directly in games, but should be avoided. Metal is supported through <a href="https://github.com/KhronosGroup/MoltenVK">MoltenVK</a>, eventually, DirectX will be supported in a similar way. Acid is licensed under the MIT licence and is open to contributions, read <a href="#Compiling">Compiling</a> to get started with development.
+
+
+
+
+<h2>Links</h2>
+
+
+
+
+Readme   <a href="https://equilibrium-games.github.io/Acid/">Read more</a><br>Documentation   <a href="https://equilibrium-games.github.io/Acid-Docs/">Autogen docs</a><br>Website   <a>Learn more</a><br>Trello   <a href="https://trello.com/b/ZRvpbbYC">Board</a> <br>
+
+
+
+
+<h2>Features</h2>
+
+
+
+
+This is a list of current features in Acid: <br> * Multiplatform (Windows, Linux, MacOS, 32bit and 64bit) <br> * Multithreaded command buffers and thread safety <br> * On the fly GLSL to SPIR-V compilation and reflection <br> * Graphics and compute pipelines <br> * Deferred rendering (PBR, Simple) <br> * Networking (HTTP, FTP, UDP, TCP) <br> * Serialization (JSON, YAML, XML) <br> * Resource management <br> * Bullet physics <br> * Entity component system <br> * Particle effect systems <br> * Event listeners <br> * File path searching, and packaging <br> * GUI and SDF font rendering <br> * Audio systems (OGG, WAV) <br> * Shadow mapping <br> * Post effects (Lensflare, Glow, Blur, SSAO, &#8230;) <br> * Model file loading (OBJ) <br> * Animations loading (COLLADA) <br> * Image file loading (JPG, PNG, TGA, BMP, PSD, GIF, HDR, PIC)
+
+
+
+
+<h2>Dependencies</h2>
+
+
+
+
+Acid uses the following libraries: <br> * <a href="https://www.khronos.org/vulkan">Vulkan</a> &#8211; Vulkan interface <br> * <a href="https://github.com/KhronosGroup/glslang">Glslang</a> &#8211; Shader compiling <br> * <a href="https://github.com/glfw/glfw">GLFW</a> &#8211; Window creation <br> * <a href="http://kcat.strangesoft.net/openal.html">OpenAL</a> &#8211; Audio interface <br> * <a href="https://github.com/bulletphysics/bullet3">Bullet3</a> &#8211; Physics integration <br> * <a href="https://icculus.org/physfs">PhysFS</a> &#8211; Archive file access <br> * <a href="https://github.com/nothings/stb">STB</a> &#8211; Texture and OGG loading <br> * <a href="https://github.com/Auburns/FastNoise">FastNoise</a> &#8211; Noise generation <br> * <a href="https://www.freetype.org/">Freetype2</a> &#8211; Font handling in text objects
+
+
+
+
+<h2>Code Snippets</h2>
+
+
+
+
+<code>cpp // Imports a 2D texture using nearest filtering. auto guiBlack = Texture::Create("Guis/Black.png", VK_FILTER_NEAREST); // Imports a 3D cubemap (face names defined in Cubemap.cpp). auto skyboxSnowy = Cubemap::Create("Objects/SkyboxSnowy", ".png"); // Imports a OBJ model. auto dragon = ModelObj::Create("Objects/Testing/ModelDragon.obj"); // Creates a sphere model with 20 latitude and longitude bands with a radius of 1. auto sphere = ModelSphere::Create(20, 20, 1.0f); // Plays a 3D sound (sound buffer resource internally managed), at (10, 0, 0), at half volume. auto jump = Sound("Sounds/Jump.ogg", Transform(10.0f * Vector3::Right), Audio::Type::Effect, false, true, 0.5f); // Loads a entity from a prefab file. auto playerObject = GetStructure()-&gt;CreateEntity("Objects/Player/Player.json", Transform::Identity); // Creates a entity. auto sphere = GetStructure()-&gt;CreateEntity(Transform(Vector3(6.7f, 6.7f, -8.0f), Vector3::ZERO, 3.0f)); sphere-&gt;AddComponent&amp;lt;mesh&gt;(ShapeSphere::Create(20, 20, 1.0f)); // This will used the sphere buffers created earlier. sphere-&gt;AddComponent&amp;lt;shapesphere&gt;(); // Multiple shape components can be added to a single rigidbody. sphere-&gt;AddComponent&amp;lt;rigidbody&gt;(2.0f); // Will be created weighing 2 units, this will find all shapes attached. sphere-&gt;AddComponent&amp;lt;materialdefault&gt;(Colour::White, Texture::Create("Objects/Testing/Albedo.png"), 0.0f, 0.5f,     Texture::Create("Objects/Testing/Material.png"), Texture::Create("Objects/Testing/Normal.png")); sphere-&gt;AddComponent&amp;lt;meshrender&gt;(); // A mesh renderer will render the material attached. // Vector maths. Vector2 a(3.0f, -7.2f); Vector2 b(-1.74f, 15.4f); Vector2 c = a * b; float dist = a.Distance(b); // Split a string by spaces. std::string stringSource = "Hello world!"; std::vector&amp;lt;std::string&gt; stringSplit = String::Split(stringSource, " "); // Will run a lambda after 5 seconds. Events::Get()-&gt;AddEvent&amp;lt;eventtime&gt;([](){     Log::Out("Hello world: %f\n", Maths::Random(-1.0f, 1.0f)); }, Time::Seconds(5.0f));</code>
+
+
+
+
+<h2>Screenshots </h2>
+
+
+
+
+&lt;img src=&#8221;https://raw.githubusercontent.com/Equilibrium-Games/Acid/master/Documents/Screenshot1.png&#8221; alt=&#8221;Acid&#8221; width=&#8221;600px&#8221;> &lt;img src=&#8221;https://raw.githubusercontent.com/Equilibrium-Games/Acid/master/Documents/Screenshot2.png&#8221; alt=&#8221;Acid&#8221; width=&#8221;600px&#8221;> &lt;img src=&#8221;https://raw.githubusercontent.com/Equilibrium-Games/Acid/master/Documents/Screenshot3.png&#8221; alt=&#8221;Acid&#8221; width=&#8221;600px&#8221;> &lt;img src=&#8221;https://raw.githubusercontent.com/Equilibrium-Games/Acid/master/Documents/Screenshot4.png&#8221; alt=&#8221;Acid&#8221; width=&#8221;600px&#8221;> &lt;img src=&#8221;https://raw.githubusercontent.com/Equilibrium-Games/Acid/master/Documents/Screenshot5.png&#8221; alt=&#8221;Acid&#8221; width=&#8221;600px&#8221;>
+
+
+
+
+<h2>Compiling</h2>
+
+
+
+
+If you don&#8217;t want to use system-wide libraries, then after cloning the repo, run <code>git submodule update --init --recursive</code> in the Acid directory to update the submodules. All platforms depend on <a href="https://cmake.org/download">CMake</a> to generate IDE/make files. <br><br>Cmake options (default ON):<br> * <code>BUILD_TESTS</code><br> * <code>ACID_INSTALL_EXAMPLES</code><br> * <code>ACID_INSTALL_RESOURCES</code> <br><br>If you installed Acid using only system libs, then <code>find_package(Acid)</code> will work from Cmake. Versioning is also supported.  When using <code>find_package(Acid)</code> the imported target <code>Acid::Acid</code> will be created. The <code>ACID_RESOURCES_DIR</code> variable will also be available, which will point to the on-disk location of <code>Acid/Resources</code> (if installed). <br><br><a href="https://www.lunarg.com/vulkan-sdk/">Vulkan SDK</a>, <a href="https://www.openal.org/downloads/">OpenAL</a>, and <a href="https://openal-soft.org/#download">OpenAL SDK</a> are required to develop and run Acid. Make sure you have environment variables <code>VULKAN_SDK</code> and <code>OPENALDIR</code> set to the paths you have Vulkan and OpenAL installed into.<br><br>Ensure you are using a compiler with full C++17 support, on Windows it is recommended that you use MSVC or <a href="https://sourceforge.net/projects/mingw-w64/?source=navbar">MinGW w64</a>.<br><br>If using Visual Studio it must be 2015 or later. Use the Visual Studio installer and select both &#8220;Desktop development with C++&#8221; and &#8220;Windows SDK&#8221; if they are not already installed. Then on Visual Studio Acid can be opened as a CMake workspace folder.<br><br>On Linux Acid requires <code>xorg-dev</code>, <code>libopenal1</code>, and <code>libvulkan1</code> to be installed. Read about how to setup <a href="https://vulkan.lunarg.com/doc/sdk/latest/linux/getting_started.html">Vulkan on Linux</a> so a Vulkan SDK is found.<br><br>Setup on MacOS is similar to the setup on Linux, a compiler that supports C++17 is required, such as XCode 10.0. <br>
+
+
+
+
+<h2>Contributing</h2>
+
+
+
+
+You can contribute to Acid in any way you want, we are always looking for help. You can learn about Acids code style from the <a href="https://github.com/Equilibrium-Games/Acid/Documents/GUIDELINES.md">Guidelines</a>.<br><br><br><br><br><br><br><br>
+			</div>
+					</div>
+	</article>
+		</div>
+	</div>
+						<footer class="footer footer-black footer-big">
+						<div class="container">
+																<div class="hestia-bottom-footer-content">
+<ul class="footer-menu pull-left">
+<li class="page_item page-item-84 current_page_item"><a href="/acid/" aria-current="page">Acid</a></li>
+<li class="page_item page-item-10"><a href="/devblog/">Devblog</a></li>
+<li class="page_item page-item-7"><a href="/">Home</a></li>
+<li class="page_item page-item-41"><a href="/ldjam-38-polyorbis/">LDJam 38 &#8211; Polyorbis</a></li>
+</ul>
+					<div class="copyright pull-right">
+				Hestia | Developed by <a href="https://themeisle.com/" rel="nofollow">ThemeIsle</a>			</div>
+			</div>			</div>
+					</footer>
+				</div>
+	</div>
+<!-- Enter your scripts here --><script type="text/javascript" src="/wp-content/themes/hestia/assets/bootstrap/js/bootstrap.min.js?ver=1.0.2" id="jquery-bootstrap-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="hestia_scripts-js-extra">
+/* <![CDATA[ */
+var requestpost = {"ajaxurl":"http:\/\/localhost\/mysite\/wp-admin\/admin-ajax.php","disable_autoslide":"","masonry":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/hestia/assets/js/script.min.js?ver=3.0.8" id="hestia_scripts-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
+</body>
+</html>
