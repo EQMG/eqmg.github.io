@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Devblog &#8211; Equilibrium Games</title>
+	<atom:link href="/category/devblog/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>Equilibrium Games Devblog</description>
+	<lastBuildDate>Sun, 24 Dec 2017 18:32:06 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8</generator>
+
+<image>
+	<url>/wp-content/uploads/2018/09/cropped-Equilibrium_08-32x32.png</url>
+	<title>Devblog &#8211; Equilibrium Games</title>
+	<link></link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Devblog 2</title>
+		<link>/2017/12/24/devblog-2/</link>
+		
+		<dc:creator><![CDATA[Matthew Albrecht]]></dc:creator>
+		<pubDate>Sun, 24 Dec 2017 18:31:01 +0000</pubDate>
+				<category><![CDATA[Devblog]]></category>
+		<guid isPermaLink="false">/?p=190</guid>
+
+					<description><![CDATA[1. Devblogs So I have decided that writing devblogs should only happen when large developments have happened with our projects, the past month has been busy for both Decaxon and I so not much work was done. 2. Flounder Flounder deferred rendering system has basically been completed, and a modular<a class="moretag" href="/2017/12/24/devblog-2/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[<h3>1. Devblogs</h3>
+<p>So I have decided that writing devblogs should only happen when large developments have happened with our projects, the past month has been busy for both Decaxon and I so not much work was done.</p>
+<h3>2. Flounder</h3>
+<p>Flounder deferred rendering system has basically been completed, and a modular post effects system has been implemented. CMake has also been implemented to compile on Windows, MacOS, and Linux, this should make it easier for us to develop Flounder, and also provide cross platform support. Clang and GCC Linux test build systems have also been added to run after commits. And lastly a large amount of code has been reworked to be cleaner and work better.</p>
+<p>I have started work on config loading and saving, and I will continue to work on finishing rendering. Hopefully the next few weeks more development for Flounder can be done!</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Devblog 1</title>
+		<link>/2017/11/18/devblog-1/</link>
+		
+		<dc:creator><![CDATA[Matthew Albrecht]]></dc:creator>
+		<pubDate>Sat, 18 Nov 2017 21:22:26 +0000</pubDate>
+				<category><![CDATA[Devblog]]></category>
+		<guid isPermaLink="false">/?p=162</guid>
+
+					<description><![CDATA[1. Devblogs We are starting to write devblogs on our current progress on our projects, we hope that we can look back on these and see the progress we have made on our projects. They will be posted when ever we feel like it, once we get into a good<a class="moretag" href="/2017/11/18/devblog-1/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[<h3>1. Devblogs</h3>
+<p>We are starting to write devblogs on our current progress on our projects, we hope that we can look back on these and see the progress we have made on our projects. They will be posted when ever we feel like it, once we get into a good development cycle we will begin to post more frequently.</p>
+<p>&nbsp;</p>
+<h3>2. Flounder</h3>
+<p>Flounder has had a lot of progress on our Vulkan implementation over the past 2 months, we are at a point where real game development is around the corner. We are using Vulkan for flexibility, reliability, speed, and future-proofing, we currently do not plan on adding support for other graphics pipeline such as Direct3D or OpenGL. <em></em>This week we finished a simple Deferred Rendering system and added a very basic entity component system. The demo has been getting better terrain, and water reflections. We will be adding a physics system, animations, asset management, and particles over the next few months to finish off a version of Flounder that is conformable enough to develop a game off of.</p>
+<p>&nbsp;</p>
+<h3>3. Ludum Dare</h3>
+<p>We will probably be participating in the next LD Jam (starting December 1st) and using Flounder to develop a 3D game.</p>
+<p>&nbsp;</p>
+<h3>4. WIP Game</h3>
+<p>We will be starting development on a new game, currently with the development name of Kosmos, by the end of the month we hope to have information to share.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
